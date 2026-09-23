@@ -12,7 +12,7 @@ Mio Memory 把一套可迁移的 Markdown 记忆库，与一个只读 MCP 检索
 
 **安装接通后，你可以在普通 ChatGPT 对话中检索本地笔记。** 作者已在 **ChatGPT Mac 客户端**实测完成 `search` 和 `fetch`。Agent 帮你安装，日常在 ChatGPT 里使用，**不用每次回到 Codex 才能查记忆**。具体入口会随账号和客户端版本有所不同。
 
-确保本机服务与私有隧道正在运行、读取已启用，然后在 ChatGPT 对话输入框的 **「＋ → 应用 / Developer mode」** 中选择 **Mio Memory Read-only**（或你安装时取的名字）。使用仓库内的虚构示例库时，可以直接发送：
+确保本机服务与私有隧道正在运行、读取已启用，然后在 ChatGPT 网页端的 设置 → Security and login → Developer mode 里面开启“Developer mode”和“Enforce CSP in developer mode”。之后在对话输入框的 **「＋」** 中选择 **Mio Memory Read-only**（或你安装时取的名字）。使用仓库内的虚构示例库时，可以直接发送：
 
 > 请实际调用 Mio Memory Read-only，先用 search 搜索“小禾 Python”，再用 fetch 读取相关结果；区分当前与历史记录，引用文件与行号。如果未实际调用，请说明，不要凭印象回答。
 
