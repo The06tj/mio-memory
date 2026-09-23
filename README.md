@@ -10,9 +10,9 @@ This repository shares the **architecture, code, and fictional examples**. It co
 
 ## Use your memory in ChatGPT
 
-**After setup, you can retrieve local notes from an ordinary ChatGPT conversation.** The author has successfully used `search` and `fetch` in the **ChatGPT Mac app**. Your agent installs the bridge; everyday lookups happen in ChatGPT, without returning to Codex for each one. Available menus depend on your account and client version.
+**After setup, you can retrieve local notes from an ordinary ChatGPT conversation.** The author has successfully used `search` and `fetch` in the **ChatGPT Mac app**. Your agent installs the bridge; everyday lookups happen in ChatGPT, without returning to Codex/Wrok for each one. Available menus depend on your account and client version.
 
-With the local service and private tunnel running and reads enabled, open a ChatGPT conversation and use the input box's **＋ → Apps / Developer mode** entry to select **Mio Memory Read-only** (or your chosen app name). For the included fictional sample vault, try:
+With the local service and private tunnel running and reads enabled, open a ChatGPT in Web and turn on "Developer mode" & "Enforce CSP in developer mode" in Security and login under Setting. Open a ChatGPT conversation and use the input box's **＋** entry to select **Mio Memory Read-only** (or your chosen app name). For the included fictional sample vault, try:
 
 > Please actually call Mio Memory Read-only: first use search for “小禾 Python”, then use fetch to read the relevant result. Distinguish current and historical records, and cite the file and line numbers. If you did not call the tools, say so rather than answering from memory.
 
