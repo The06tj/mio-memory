@@ -2,11 +2,21 @@
 
 **Your notes stay yours. Your AI can look up what you ask it to remember.**
 
-[中文说明](README.zh-CN.md) · [Architecture](docs/ARCHITECTURE.md) · [Privacy](docs/PRIVACY.md) · [Known issues](docs/KNOWN_ISSUES.md)
+[中文说明](README.zh-CN.md) · [Use in ChatGPT](docs/CHATGPT_USAGE.md#english) · [Architecture](docs/ARCHITECTURE.md) · [Privacy](docs/PRIVACY.md) · [Known issues](docs/KNOWN_ISSUES.md)
 
 Mio Memory combines a portable Markdown memory library with a small, read-only MCP server. Keep stable facts, everyday moments, and their sources in ordinary files. When you ask, an AI searches locally, reads the relevant sections, and answers with file names, line numbers, dates, and uncertainty intact.
 
 This repository shares the **architecture, code, and fictional examples**. It contains no author's private memories. Obsidian is optional; Markdown is the storage format.
+
+## Use your memory in ChatGPT
+
+**After setup, you can retrieve local notes from an ordinary ChatGPT conversation.** The author has successfully used `search` and `fetch` in the **ChatGPT Mac app**. Your agent installs the bridge; everyday lookups happen in ChatGPT, without returning to Codex for each one. Available menus depend on your account and client version.
+
+With the local service and private tunnel running and reads enabled, open a ChatGPT conversation and use the input box's **＋ → Apps / Developer mode** entry to select **Mio Memory Read-only** (or your chosen app name). For the included fictional sample vault, try:
+
+> Please actually call Mio Memory Read-only: first use search for “小禾 Python”, then use fetch to read the relevant result. Distinguish current and historical records, and cite the file and line numbers. If you did not call the tools, say so rather than answering from memory.
+
+“小禾” is a fictional test character. Check the tool activity for an actual **search → fetch** sequence. A GitHub link alone does not connect ChatGPT to your computer. [Follow the ChatGPT setup and daily-use guide →](docs/CHATGPT_USAGE.md#english)
 
 ## Give it to your agent
 
@@ -52,6 +62,7 @@ OpenAI Support has received the report; the root cause and repair date are uncon
 
 ## Explore
 
+- [Using your notes in ChatGPT: setup, prompts, and troubleshooting](docs/CHATGPT_USAGE.md#english)
 - [Agent installation and acceptance checks](docs/AGENT_INSTALL.md)
 - [Memory organization and retrieval architecture](docs/ARCHITECTURE.md)
 - [Privacy, permissions, and revocation](docs/PRIVACY.md)

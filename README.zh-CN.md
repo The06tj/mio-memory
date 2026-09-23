@@ -2,11 +2,21 @@
 
 **记忆留在你自己的笔记里，需要时，让 AI 查得到。**
 
-[English](README.md) · [系统架构](docs/ARCHITECTURE.md) · [隐私边界](docs/PRIVACY.md) · [已知问题](docs/KNOWN_ISSUES.md)
+[English](README.md) · [在 ChatGPT 里使用](docs/CHATGPT_USAGE.md#中文) · [系统架构](docs/ARCHITECTURE.md) · [隐私边界](docs/PRIVACY.md) · [已知问题](docs/KNOWN_ISSUES.md)
 
 Mio Memory 把一套可迁移的 Markdown 记忆库，与一个只读 MCP 检索服务连接起来。你用普通文件保存稳定事实、日常片段和来源；当你明确提出检索时，AI 在本机搜索、读取相关段落，并带着文件名、行号、日期和不确定性回答。
 
 这里分享的是**架构、代码和虚构示例**，不包含作者的私人记忆。可以使用 Obsidian，也可以用其他 Markdown 编辑器。
+
+## 可以直接在 ChatGPT 聊天里调用
+
+**安装接通后，你可以在普通 ChatGPT 对话中检索本地笔记。** 作者已在 **ChatGPT Mac 客户端**实测完成 `search` 和 `fetch`。Agent 帮你安装，日常在 ChatGPT 里使用，**不用每次回到 Codex 才能查记忆**。具体入口会随账号和客户端版本有所不同。
+
+确保本机服务与私有隧道正在运行、读取已启用，然后在 ChatGPT 对话输入框的 **「＋ → 应用 / Developer mode」** 中选择 **Mio Memory Read-only**（或你安装时取的名字）。使用仓库内的虚构示例库时，可以直接发送：
+
+> 请实际调用 Mio Memory Read-only，先用 search 搜索“小禾 Python”，再用 fetch 读取相关结果；区分当前与历史记录，引用文件与行号。如果未实际调用，请说明，不要凭印象回答。
+
+「小禾」是虚构测试人物。展开工具调用记录，确认确实出现 **search → fetch**。只把 GitHub 链接发给 ChatGPT，不等于已经连接你的电脑。[查看接入步骤、日常用法与排查指南 →](docs/CHATGPT_USAGE.md#中文)
 
 ## 把仓库交给你的 Agent
 
@@ -54,6 +64,7 @@ flowchart LR
 
 ## 继续了解
 
+- [如何在 ChatGPT 里调用：入口、可复制提示与排查](docs/CHATGPT_USAGE.md#中文)
 - [给 Agent 的安装流程与验收方法](docs/AGENT_INSTALL.md)
 - [记忆如何组织、检索如何工作](docs/ARCHITECTURE.md)
 - [权限、隐私与撤销访问](docs/PRIVACY.md)

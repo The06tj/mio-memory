@@ -4,6 +4,8 @@ This guide is addressed to the user's AI agent. Carry out the routine setup and 
 
 Read [AGENTS.md](../AGENTS.md), [the privacy boundary](PRIVACY.md), and [known issues](KNOWN_ISSUES.md) first. Respect choices already explicitly made in the conversation. Do not repeatedly ask for the same permission.
 
+The user-facing handoff is [Using Mio Memory in ChatGPT](CHATGPT_USAGE.md). Installation and local process management are the agent's setup work; once connected, the user can request lookups in ordinary ChatGPT conversations without returning to their installation agent each time. Include this guide when delivering the installation.
+
 ## 1. Establish the environment
 
 Confirm macOS and a working Python 3.10 or newer. This release uses MCP Python SDK 2.2.0 and is intended for a personal, locally managed installation. Review the repository and its dependency declarations before executing it, as with any downloaded code.
