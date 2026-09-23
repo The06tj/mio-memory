@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mio-memory"
+version = "0.1.0"
+description = "Agent-installed, read-only retrieval for a portable Markdown memory vault."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["mcp==2.2.0"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Operating System :: MacOS :: MacOS X",
+  "Topic :: Text Processing :: Indexing",
+]
+
+[project.scripts]
+mio-memory = "mio_memory.cli:main"
+mio-memory-server = "mio_memory.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
